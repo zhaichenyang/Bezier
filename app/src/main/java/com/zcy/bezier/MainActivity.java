@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
+import com.zcy.bezier.StickBall.StickBallActivity;
 import com.zcy.bezier.drop.DropActivity;
 import com.zcy.bezier.heart.HeartActivity;
 import com.zcy.bezier.simple.SimpleActivity;
@@ -25,6 +26,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     Button btnDrop;
     Button btnWater;
     Button btnHeart;
+    Button btnBall;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,11 +37,13 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnDrop=findViewById(R.id.drop);
         btnWater=findViewById(R.id.water);
         btnHeart=findViewById(R.id.heartFly);
+        btnBall=findViewById(R.id.ball);
         btnSimple.setOnClickListener(this);
         btnWave.setOnClickListener(this);
         btnDrop.setOnClickListener(this);
         btnWater.setOnClickListener(this);
         btnHeart.setOnClickListener(this);
+        btnBall.setOnClickListener(this);
     }
 
     @Override
@@ -64,6 +68,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
             case R.id.heartFly:
                 Intent intent5 =new Intent(mContext, HeartActivity.class);
                 startActivity(intent5);
+                break;
+            case R.id.ball:
+                Intent intent6 =new Intent(mContext, StickBallActivity.class);
+                startActivity(intent6);
                 break;
         }
     }

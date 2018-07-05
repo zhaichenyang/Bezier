@@ -24,5 +24,6 @@
         <activity android:name=".drop.DropActivity"/>
         <activity android:name=".water.WaterActivity"/>
         <activity android:name=".heart.HeartActivity"/>
+        <activity android:name=".StickBall.StickBallActivity"/>
     </application>
 </manifest>
