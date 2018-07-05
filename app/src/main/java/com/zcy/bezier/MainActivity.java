@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
+import com.zcy.bezier.drop.DropActivity;
 import com.zcy.bezier.simple.SimpleActivity;
 import com.zcy.bezier.wave.WaveActivity;
 
@@ -19,6 +20,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private Context mContext;
     Button btnSimple;
     Button btnWave;
+    Button btnDrop;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +28,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
         mContext=this;
         btnSimple=findViewById(R.id.simple);
         btnWave=findViewById(R.id.wave);
+        btnDrop=findViewById(R.id.drop);
         btnSimple.setOnClickListener(this);
         btnWave.setOnClickListener(this);
+        btnDrop.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +44,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
             case R.id.wave:
                 Intent intent2 =new Intent(mContext, WaveActivity.class);
                 startActivity(intent2);
+                break;
+            case R.id.drop:
+                Intent intent3 =new Intent(mContext, DropActivity.class);
+                startActivity(intent3);
                 break;
         }
     }

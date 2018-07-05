@@ -21,5 +21,6 @@
         </activity>
         <activity android:name=".simple.SimpleActivity"/>
         <activity android:name=".wave.WaveActivity"/>
+        <activity android:name=".drop.DropActivity"/>
     </application>
 </manifest>
