@@ -31,5 +31,12 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="5dp"
         android:text="水波演示效果"/>
+    <Button
+        android:id="@+id/heartFly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="爱心演示效果"/>
 
 </LinearLayout>

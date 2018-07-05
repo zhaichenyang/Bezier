@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.zcy.bezier.drop.DropActivity;
+import com.zcy.bezier.heart.HeartActivity;
 import com.zcy.bezier.simple.SimpleActivity;
 import com.zcy.bezier.water.WaterActivity;
 import com.zcy.bezier.wave.WaveActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     Button btnWave;
     Button btnDrop;
     Button btnWater;
+    Button btnHeart;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,10 +34,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnWave=findViewById(R.id.wave);
         btnDrop=findViewById(R.id.drop);
         btnWater=findViewById(R.id.water);
+        btnHeart=findViewById(R.id.heartFly);
         btnSimple.setOnClickListener(this);
         btnWave.setOnClickListener(this);
         btnDrop.setOnClickListener(this);
         btnWater.setOnClickListener(this);
+        btnHeart.setOnClickListener(this);
     }
 
     @Override
@@ -56,6 +60,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
             case R.id.water:
                 Intent intent4 =new Intent(mContext, WaterActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.heartFly:
+                Intent intent5 =new Intent(mContext, HeartActivity.class);
+                startActivity(intent5);
                 break;
         }
     }
