@@ -1,4 +1,4 @@
-package com.zcy.bezier;
+package com.zcy.bezier.simple;
 
 import android.content.Context;
 import android.graphics.Canvas;
