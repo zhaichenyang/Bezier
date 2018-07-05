@@ -38,6 +38,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         btnWater=findViewById(R.id.water);
         btnHeart=findViewById(R.id.heartFly);
         btnBall=findViewById(R.id.ball);
+        //点击事件
         btnSimple.setOnClickListener(this);
         btnWave.setOnClickListener(this);
         btnDrop.setOnClickListener(this);
